@@ -1,17 +1,17 @@
 # AWS Fargate + Terraform Example (Beginner Friendly)
 
-This repository provides a **fully documented, production-quality example** of how to deploy:
+This repository provides a example on how to deploy: 
 
 - A VPC with two public subnets  
 - An Internet Gateway and a public route table  
-- A security-hardened Application Load Balancer  
+- An ELB Application Load Balancer  
 - An ECS Cluster (Fargate)  
 - A Fargate Task Definition running nginx  
 - Dynamic HTML showing the task’s private IP  
 - Auto-Scaling using CPU and ALB Request Count  
 - Optional CloudWatch logging (toggle via variable)
 
-The goal is to help beginners understand **every moving part** of an ECS Fargate deployment.
+The goal is to help beginners understand an ECS Fargate deployment (nginx + autoscaling + serverless)
 
 ---
 
@@ -58,3 +58,9 @@ variable "project_name" {
 variable "enable_logging" {
   default = true
 }
+
+---
+
+### Verification 
+
+Verify your setup by visiting your ELB URL in a web browser.   Example:  http://demo-alb-148448367.us-east-1.elb.amazonaws.com
