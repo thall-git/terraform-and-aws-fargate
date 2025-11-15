@@ -58,9 +58,9 @@ variable "project_name" {
 variable "enable_logging" {
   default = true
 }
-
+```
 ---
 
 ### Verification 
 
-Verify your setup by visiting your ELB URL in a web browser.   Example:  http://demo-alb-148448367.us-east-1.elb.amazonaws.com
+Verify your setup by visiting your ELB URL in a web browser.  Example:  http://demo-alb-148448367.us-east-1.elb.amazonaws.com
